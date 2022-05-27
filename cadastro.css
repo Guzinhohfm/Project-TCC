@@ -19,30 +19,49 @@ div{
     padding-top: 10px;
 }
 
+button{
+    margin-bottom: 10px;
+}
+
 section{
     background: white;
     border-radius: 10px;
-    padding: 15px;
-    width: 250px;
+    width: 350px;
     margin: auto;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
-    padding-top: 10px;
+    box-shadow: 5px 5px 10px rgba(2, 2, 2, 0.425);
+ 
 }
 
-input[type="text"]{
+.form-control small{
+    visibility: hidden;
+    position: absolute;
+    color: #DB5A5A;
+}
+input{
     border-radius: 10px;
 }
 
-input[type="password"]{
-    border-radius: 10px;
+.form-control.success input {
+    border: 3px solid #4ECA64;
 }
 
-/*img{
-    max-width: 100%;
-    max-height: 100%;
-    width: 100px;
-    height: 100px;
-    display: flex;
+.form-control.error input{
+    border: 3px solid #DB5A5A;
 }
-*/
 
+.form-control i{
+    position: absolute;
+    visibility: hidden;
+}
+
+.form-control.success i .img-success{
+    visibility: visible;
+}
+
+.form-control.error i .img-error{
+    visibility: visible;
+}
+
+.form-control.error small{
+    visibility: visible;
+}
