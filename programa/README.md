@@ -1,0 +1,4 @@
+# TCC - Codificação do TCC
+
+
+# RODAR EM UM SERVIDOR DOCKER

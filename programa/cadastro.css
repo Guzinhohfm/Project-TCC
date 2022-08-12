@@ -1,0 +1,67 @@
+body{
+    background-color: rgb(25, 29, 25);
+    background-image: url(space.png);
+}
+header{
+    text-align: center;
+    padding-top: 270px;
+}
+
+h1{
+    color:rgb(46, 49, 49);
+    font-family: sans-serif ;
+   
+   
+}
+
+div{
+    text-align: center;
+    padding-top: 10px;
+}
+
+button{
+    margin-bottom: 10px;
+}
+
+section{
+    background: white;
+    border-radius: 10px;
+    width: 350px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(2, 2, 2, 0.425);
+ 
+}
+
+.form-control small{
+    visibility: hidden;
+    position: absolute;
+    color: #DB5A5A;
+}
+input{
+    border-radius: 10px;
+}
+
+.form-control.success input {
+    border: 3px solid #4ECA64;
+}
+
+.form-control.error input{
+    border: 3px solid #DB5A5A;
+}
+
+.form-control i{
+    position: absolute;
+    visibility: hidden;
+}
+
+.form-control.success i .img-success{
+    visibility: visible;
+}
+
+.form-control.error i .img-error{
+    visibility: visible;
+}
+
+.form-control.error small{
+    visibility: visible;
+}
