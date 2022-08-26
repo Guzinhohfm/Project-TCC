@@ -1,76 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt_br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Cadastro || Be a dev</title>
-    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="cadastro.css" />
+  </head>
+  <body>
+    <header></header>
+    <section>
+      <div id="container">
+        <h1>Crie sua conta:</h1>
 
-</head>
-<body>
-    <header>
-        
-    </header>
-<section>
-        <div id="container">
-            <h1>Crie sua conta:
-           
-            </h1>
+        <form class="form" id="form" method="post" action="principal.html">
+          <div class="form-control">
+            <em
+              class="fa-solid fa-envelope"
+              aria-hidden="true"
+              style="color: #3782e4"
+            ></em>
+            <input type="email" id="log" placeholder="Seu e-mail" />
+            <i><img class="img-success" src="success-icon.svg" alt="" /></i>
+            <i><img class="img-error" src="error-icon.svg" alt="" /></i>
+
+            <br /><small>Error message</small>
+          </div>
+          <br />
+
+          <div class="form-control">
+            <em class="fa-solid fa-user" style="color: #3782e4"></em>
+            <input type="text" id="name" placeholder="Seu nome" />
+            <i><img class="img-success" src="success-icon.svg" alt="" /></i>
+            <i><img class="img-error" src="error-icon.svg" alt="" /></i>
+
+            <br /><small>Error message</small>
+          </div>
+          <br />
+
+          <div class="form-control">
+            <em class="fa-solid fa-key" style="color: #3782e4"></em>
+            <input type="password" id="sen" placeholder="Senha" />
+            <i><img class="img-success" src="success-icon.svg" alt="" /></i>
+            <i><img class="img-error" src="error-icon.svg" alt="" /></i>
+
+            <br /><small>Error message</small>
+          </div>
+          <br />
+
+          <div class="form-control">
+            <em class="fa-solid fa-key" style="color: #3782e4"></em>
+            <input
+              type="password"
+              id="conf-sen"
+              placeholder="Confirme sua senha"
+            />
+            <i><img class="img-success" src="success-icon.svg" alt="" /></i>
+            <i><img class="img-error" src="error-icon.svg" alt="" /></i>
+
+            <br /><small>Error message</small>
+          </div>
+          <br />
+
+          <br /><input type="submit" onclick="return checkInputs()" value="Cadastrar" id="btn-1">
             
-            <form class="form" id="form" method="post" action="principal.html">
-            
-        <div class="form-control">
-            <em class="fa-solid fa-envelope" aria-hidden="true" style="color: #3782e4;"></em>
-           <input type="email" id="log" placeholder="Seu e-mail">
-           <i><img class="img-success" src="success-icon.svg" alt=""></i>
-           <i><img class="img-error"  src="error-icon.svg" alt=""></i>
+        </input>
+        </form>
 
-           <br><small>Error message</small>
-
-        </div><br>
-            
-            <div class="form-control">
-
-            <em class="fa-solid fa-user" style="color: #3782e4;"></em>
-            <input type="text" id="name"placeholder="Seu nome"> 
-            <i><img class="img-success" src="success-icon.svg" alt=""></i>
-            <i><img class="img-error"  src="error-icon.svg" alt=""></i>
-
-            <br><small>Error message</small>         
-        </div><br>
-            
-        <div class="form-control">
-            
-            <em class="fa-solid fa-key" style="color: #3782e4;"></em>
-            <input type="password" id="sen" placeholder="Senha" >
-            <i><img class="img-success" src="success-icon.svg" alt=""></i>
-            <i><img class="img-error"  src="error-icon.svg" alt=""></i>
-
-            <br><small>Error message</small>
-        </div><br>
-            
-
-        <div class="form-control">
-
-            <em class="fa-solid fa-key" style="color: #3782e4;"></em>
-            <input type="password"  id="conf-sen" placeholder="Confirme sua senha" >
-            <i><img class="img-success" src="success-icon.svg" alt=""></i>
-            <i><img class="img-error" src="error-icon.svg" alt=""></i>
-
-           <br><small>Error message</small>          
-        </div><br>
-        
-           <button type="submit" onclick="return checkInputs()">Cadastrar</button>
-       </form>
-
-       <button type="submit" onclick="retornar()">Voltar</button>
-        </div>
+       <br> <input type="submit" onclick="retornar()" value="Voltar" id="btn-2"></input>
+      </div>
     </section>
-</body>
-<script src="https://kit.fontawesome.com/2b3778da1c.js" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-<script src="cadastro.js"></script>
-
+  </body>
+  <script
+    src="https://kit.fontawesome.com/2b3778da1c.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"
+  ></script>
+  <script src="cadastro.js"></script>
 </html>

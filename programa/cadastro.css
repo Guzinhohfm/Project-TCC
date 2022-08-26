@@ -1,67 +1,66 @@
-body{
-    background-color: rgb(25, 29, 25);
-    background-image: url(space.png);
+body {
+  background-color: rgb(25, 29, 25);
+  background-image: url(space.png);
 }
-header{
-    text-align: center;
-    padding-top: 270px;
-}
-
-h1{
-    color:rgb(46, 49, 49);
-    font-family: sans-serif ;
-   
-   
+header {
+  text-align: center;
+  padding-top: 270px;
 }
 
-div{
-    text-align: center;
-    padding-top: 10px;
+h1 {
+  color: rgb(46, 49, 49);
+  font-family: sans-serif;
 }
 
-button{
-    margin-bottom: 10px;
+div {
+  text-align: center;
+  padding-top: 10px;
 }
 
-section{
-    background: white;
-    border-radius: 10px;
-    width: 350px;
-    margin: auto;
-    box-shadow: 5px 5px 10px rgba(2, 2, 2, 0.425);
- 
+button {
+  margin-bottom: 10px;
 }
 
-.form-control small{
-    visibility: hidden;
-    position: absolute;
-    color: #DB5A5A;
+section {
+  background: white;
+  border-radius: 10px;
+  width: 350px;
+  margin: auto;
+  box-shadow: 5px 5px 10px rgba(11, 15, 236, 0.425);
 }
-input{
-    border-radius: 10px;
+
+.form-control small {
+  visibility: hidden;
+  position: absolute;
+  color: #db5a5a;
 }
 
 .form-control.success input {
-    border: 3px solid #4ECA64;
+  border: 3px solid #4eca64;
 }
 
-.form-control.error input{
-    border: 3px solid #DB5A5A;
+.form-control.error input {
+  border: 3px solid #db5a5a;
 }
 
-.form-control i{
-    position: absolute;
-    visibility: hidden;
+.form-control i {
+  position: absolute;
+  visibility: hidden;
 }
 
-.form-control.success i .img-success{
-    visibility: visible;
+.form-control.success i .img-success {
+  visibility: visible;
 }
 
-.form-control.error i .img-error{
-    visibility: visible;
+.form-control.error i .img-error {
+  visibility: visible;
 }
 
-.form-control.error small{
-    visibility: visible;
+.form-control.error small {
+  visibility: visible;
+}
+
+#btn1,
+#btn2 {
+  display: inline-block;
 }
