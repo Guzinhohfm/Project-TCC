@@ -1,0 +1,13 @@
+body {
+  background-color: rgb(131, 89, 70);
+}
+
+#form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 20em;
+
+  gap: 5px;
+}

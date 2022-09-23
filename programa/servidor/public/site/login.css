@@ -1,0 +1,153 @@
+body {
+  background-color: rgb(25, 29, 25);
+  background-image: url(imgs/space.png);
+  font-family: arial;
+  overflow: hidden;
+}
+header {
+  padding-top: 270px;
+}
+
+h1 {
+  color: #9925be;
+  font-family: sans-serif;
+  text-shadow: 5px 2px rgb(25, 7, 27);
+}
+
+h1,
+section {
+  margin-left: 10cm;
+}
+
+div {
+  text-align: center;
+}
+
+#log {
+  position: relative;
+  bottom: -18px;
+}
+section {
+  background: white;
+
+  max-width: auto;
+  max-height: auto;
+
+  border-radius: 10px;
+  border-color: blue;
+  width: 350px;
+  height: 250px;
+  box-shadow: 5px 5px 10px rgba(11, 15, 236, 0.425);
+
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  bottom: -10px;
+  vertical-align: top;
+}
+
+label {
+  color: red;
+  font-weight: 40px;
+  font-size: 14px;
+}
+
+.image-1 {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  right: -10px;
+  border: solid gray;
+}
+
+.image-2 {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  right: -10px;
+  border: solid gray;
+}
+
+.image-3 {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  right: -10px;
+  border: solid gray;
+}
+
+.phplogo {
+  display: block;
+  width: 100%;
+}
+
+.jslogo {
+  display: block;
+  width: 100%;
+}
+
+.pylogo {
+  display: block;
+  width: 100%;
+}
+
+.phplogo:hover + .img_text {
+  opacity: 1;
+  transition: all 0.3s ease;
+  transform: translateX(100px);
+}
+
+.jslogo:hover + .img_text {
+  opacity: 1;
+  transition: all 0.3s ease;
+  transform: translateX(100px);
+}
+
+.pylogo:hover + .img_text {
+  opacity: 1;
+  transition: all 0.3s ease;
+  transform: translateX(100px);
+}
+
+.img_text {
+  font-size: 1em;
+  font-weight: bold;
+  position: relative;
+  right: -150px;
+  top: -180px;
+  border: solid gray;
+  opacity: 0;
+}
+
+#right-side {
+  position: relative;
+  top: -180px;
+
+  max-width: auto;
+  max-height: auto;
+
+  margin-top: -15px;
+  padding-top: 50px;
+  width: 600px;
+  height: 700px;
+}
+
+#sub {
+  position: relative;
+  color: #9925be;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+#btn1,
+#btn2 {
+  border-radius: 5px;
+}
+
+#btn1:hover {
+  background-color: rgba(11, 15, 236, 0.425);
+}
+
+#btn2:hover {
+  background-color: rgba(11, 15, 236, 0.425);
+}

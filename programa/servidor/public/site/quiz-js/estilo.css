@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Nova+Square&family=Roboto:wght@900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(104, 109, 42);
+
+  font-size: 30px;
+  font-family: "Roboto";
+}
+
+h1 {
+  padding: 20px 0;
+  text-align: center;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p,
+div {
+  display: flex;
+  justify-content: right;
+  position: relative;
+  top: -500px;
+  left: -50px;
+}
+
+li {
+  border-radius: 5px;
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 15px;
+  /* remove pontos da lista */
+  list-style-type: none;
+}
