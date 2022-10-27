@@ -22,14 +22,20 @@ section {
   align-items: center;
 }
 
-p,
-div {
-  display: flex;
-  justify-content: right;
-  position: relative;
-  top: -500px;
-  left: -50px;
+
+p{
+  position: absolute;
+  top: 80%;
+  right: 2.5%;
 }
+
+div{
+  position: absolute;
+  top: 90%;
+  right: 2.5%;
+
+}
+
 
 li {
   border-radius: 5px;
@@ -38,4 +44,26 @@ li {
   margin-bottom: 15px;
   /* remove pontos da lista */
   list-style-type: none;
+}
+
+#voltar{
+  position: absolute;
+    top: 95%;
+    right: 2.5%;
+    
+}
+
+#btn-voltar{
+  text-decoration: none; 
+
+  background-color: rgb(100, 82, 98);
+
+  border-radius: 5px;
+
+  font-size: 25px;
+}
+
+
+.alternativas-fim, a{
+    text-decoration: none;
 }

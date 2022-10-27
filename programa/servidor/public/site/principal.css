@@ -241,3 +241,18 @@ menu {
   position: relative;
   top: -10px;
 }
+
+#img-games {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 0;
+}
+
+#g1,
+#g2,
+#g3 {
+  padding-left: 1em;
+  padding-right: 1em;
+}
