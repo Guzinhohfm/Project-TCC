@@ -13,39 +13,48 @@ include('verificalogin.php');
     <title>Página Principal</title>
     <style></style>
     <link href="principal.css" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-<p><?php echo $_SESSION['email']; ?></p>
-    <input type="checkbox" id="bt_menu">
-    <label for="bt_menu">&#9776;</label>
 
-    <a href="logout.php">Sair</a>
-    
     <nav class="menu">
         <ul>
+            <li>
+                <input type="checkbox" id="bt_menu">
+                <label for="bt_menu">&#9776;</label>
+
             <li><a href="telaprincipal.php"><img src="imgs/home.png" style="height:25px; width:25px;"> Início</a></li>
               <li><a href="telajogos.html"><img src="imgs/jogos.png" style="height:25px; width:25px;"> Jogos</a>
                 <ul>
                     <li><a href="indexphp.html"><img src="imgs/php.png" style="height:25px; width:25px;"> PHP Básico</a>
-                    <li><a href="indexjs.html"><img src="imgs/java.png" style="height:25px; width:25px;"> Java Script Básico</a>
+                    <li><a href="indexjs.html"><img src="imgs/javascript.png" style="height:25px; width:25px;"> Java Script Básico</a>
                     <li><a href="indexphy.html"><img src="imgs/phyton.png" style="height:25px; width:25px;">Phyton Básico</a>
                 </ul>
             </li>
             <li><a href="telapontos.html"><img src="imgs/pontuação.png" style="height:25px; width:25px;"> Pontos</a>
                 <ul class="submenu">
-                    <li><a href="pontuacao.html">Sua Pontuação</a>
+                    
                     <li><a href="adquirir.html">Como Adquirir </a>
                     <li><a href="reinvidicar.html">Reinvidicações</a>
                 </ul>
             </li>
 
+
+
             <li><a href="recompensas.html"><img src="imgs/recompensa.png" style="height:25px; width:25px;"> Recompensas</a></li>
+
+            <p id="user"> <i class='far fa-id-card'></i><?php echo $_SESSION['email']; ?></p>
+
+            <!-- <a href="logout.php">Sair</a> -->
+           
             
     </nav>
 
+
+    
 <input type="checkbox" id="check">
 <label id="icone" for="check"><img src="imgs/menu.png" style="height:35px; width:35px;" id="icon-barra"></label>
+
 
 <div class="barra">
 
@@ -67,7 +76,7 @@ include('verificalogin.php');
         <sumary>Linguagens Disponíveis: </sumary>
         <section class="ml-4">
             <div><img src="imgs/php.png" style="height:20px; width:20px;"> PHP</div>
-            <div><img src="imgs/java.png" style="height:20px; width:20px;"> JAVA  <small></small></div>
+            <div><img src="imgs/javascript.png" style="height:20px; width:20px;"> Java Script <small></small></div>
             <div><img src="imgs/phyton.png" style="height:20px; width:20px;"> Phyton <small></small></div>
         </section>
     </details>
@@ -87,11 +96,11 @@ include('verificalogin.php');
             </li>
             <li>
                 <input type="radio" name="tabs" class="rd_tab" id="Linguagem JAVA">
-                <label for="Linguagem JAVA" class="tab_label">Linguagem JAVA</label>
+                <label for="Linguagem JAVA" class="tab_label">Linguagem JavaScript</label>
                 <div class="tab-content">
-                    <h2>Aprendendo Java <img src="imgs/java.png" style="height:40px; width:40px;"></h2>
+                    <h2>Aprendendo Java Script <img src="imgs/javascript.png" style="height:40px; width:40px;"></h2>
                     <article>
-                        Java é uma linguagem de programação e plataforma computacional lançada pela primeira vez pela Sun Microsystems em 1995. Existem muitas aplicações e sites que não funcionarão, a menos que você tenha o Java instalado, e mais desses são criados todos os dias. O Java é rápido, seguro e confiável.
+                        
                     </article>
                 </div>
             </li>
@@ -119,5 +128,7 @@ include('verificalogin.php');
         </ul>
     </nav><br><br>
 
+
+    
 </body>
 </html> 

@@ -112,24 +112,26 @@ label {
 .img_text {
   font-size: 1em;
   font-weight: bold;
+  color: white;
   position: relative;
   right: -150px;
   top: -180px;
-  border: solid gray;
+  border: solid rgb(39, 38, 38);
   opacity: 0;
 }
 
 #right-side {
   position: relative;
   top: -180px;
+  left: -100px;
 
   max-width: auto;
   max-height: auto;
 
   margin-top: -15px;
   padding-top: 50px;
-  width: 600px;
-  height: 700px;
+  width: 13em;
+  height: 42em;
 }
 
 #sub {
