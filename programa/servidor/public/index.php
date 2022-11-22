@@ -1,5 +1,5 @@
 <?php 
   
-  header("location: /site/login.php");
+  header("location: /site/loginv2.php");
 
 ?>

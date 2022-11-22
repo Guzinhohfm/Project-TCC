@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $("#form-cadastro").validate({
+  $("#form-cadastrar").validate({
     rules: {
       log: {
         required: true,
@@ -39,6 +39,3 @@ $(document).ready(function () {
   });
 });
 
-function retornar() {
-  location.href = "login.php";
-}

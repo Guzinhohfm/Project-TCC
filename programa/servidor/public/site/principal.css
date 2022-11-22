@@ -6,7 +6,6 @@ body{
 
 h1,
 h2 {
-  text-shadow: #070046c0 2px 2px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,14 +65,14 @@ nav a {
   transform: translateX(300px);
 }
 
-#check:checked ~ .barra nav a .link {
+#check:checked ~ .barra nav a .link {   
   opacity: 1;
   margin-top: 0;
   transition-delay: 0.2s;
 }
 
 * {
-  color: rgb(22, 192, 192);
+  color: rgb(22, 96, 192);
   font-family: "Roboto Condensed";
 }
 
@@ -211,7 +210,7 @@ label[for="bt_menu"]:hover {
 }
 
 .nav_tabs .rd_tab:checked ~ label {
-  background-color: rgb(22, 192, 192);
+  background-color: rgb(22, 116, 192);
   color: #fff;
 }
 
@@ -230,7 +229,7 @@ label[for="bt_menu"]:hover {
 }
 .tab-content h2 {
   padding: 10px;
-  color: #87d3b7;
+  color: rgb(22, 90, 192);
 }
 .tab-content article {
   padding: 10px;
@@ -272,6 +271,58 @@ menu {
   position: relative;
   bottom: -5px;
   width: 15px;
-  right: -75em;
+  right: -5em;
   height: 10px;
+}
+
+#logout{
+  width: 20%;
+  position: relative;
+  right: -5em;
+}
+
+#pontuacao{
+  text-align: center;
+  position: relative;
+
+  bottom: -5em;
+
+  font-size: 25px;
+}
+
+#pontos{
+  position: relative;
+
+  bottom: -5em;
+
+  font-size: 20px;
+}
+
+#atividades-form{
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+  bottom: -5em;
+  left: 25px;
+
+  
+
+}
+
+#atts{
+  margin-right: 3em;
+}
+
+#imgs-atts{
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+  bottom: -15em;
+  left: -50px;
+
+
+  gap: 8em;
 }

@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: rgb(104, 109, 42);
+  background-color: rgb(29, 26, 26);
 
   font-size: 30px;
   font-family: "Roboto";
@@ -14,7 +14,9 @@ body {
 h1 {
   padding: 20px 0;
   text-align: center;
+  color: white;
 }
+
 
 section {
   display: flex;
@@ -50,17 +52,21 @@ li {
   position: absolute;
     top: 95%;
     right: 2.5%;
+
     
 }
 
 #btn-voltar{
   text-decoration: none; 
 
-  background-color: rgb(100, 82, 98);
+  background-color: rgb(253, 253, 253);
 
   border-radius: 5px;
 
   font-size: 25px;
+
+  color: black;
+
 }
 
 

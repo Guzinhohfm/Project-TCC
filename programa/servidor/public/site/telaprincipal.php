@@ -42,18 +42,17 @@ include('verificalogin.php');
 
 
             <li><a href="recompensas.html"><img src="imgs/recompensa.png" style="height:25px; width:25px;"> Recompensas</a></li>
+  
+    <p id="user"> <i class='far fa-id-card'></i><?php echo $_SESSION['email']; ?></p>
 
-            <p id="user"> <i class='far fa-id-card'></i><?php echo $_SESSION['email']; ?></p>
-
-            <!-- <a href="logout.php">Sair</a> -->
-           
-            
     </nav>
 
 
     
 <input type="checkbox" id="check">
 <label id="icone" for="check"><img src="imgs/menu.png" style="height:35px; width:35px;" id="icon-barra"></label>
+
+
 
 
 <div class="barra">
@@ -63,6 +62,7 @@ include('verificalogin.php');
     <a href="perfil.html"><div class="link">Perfil</div></a>
     <a href="configurações.html"><div class="link">Configurações</div></a>
     <a href="contato.html"><div class="link">Contato</div></a>
+    <a href="logout.php"><div class="link">Sair</div></a>
 </nav>
 </div>
     <br>
@@ -100,7 +100,7 @@ include('verificalogin.php');
                 <div class="tab-content">
                     <h2>Aprendendo Java Script <img src="imgs/javascript.png" style="height:40px; width:40px;"></h2>
                     <article>
-                        
+                    JavaScript é uma linguagem de programação que permite a você implementar itens complexos em páginas web,toda vez que uma página da web faz mais do que simplesmente mostrar a você informação estática mostrando conteúdo que se atualiza em um intervalo de tempo, mapas interativos ou gráficos 2D/3D animados, etc.
                     </article>
                 </div>
             </li>
