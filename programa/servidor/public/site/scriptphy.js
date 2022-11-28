@@ -1,34 +1,24 @@
 let perguntas = [
   {
     titulo:
-      "Subprograma que pode ser chamado por código externo ou interno, e geralmente retorna valor",
-    alternativas: ["Função", "Procedimento", "Classes", "Objetos"],
+      "Qual é a sintaxe correta para gerar 'Hello World' em Python?",
+    alternativas: ["print('Hello World')", "echo('Hello World')", "p('Hello World')", "echo 'Hello World'"],
     correta: 0,
   },
   {
     titulo:
-      "Como podemos alterar o conteúdo do elemento HTML a seguir: <p id='demo'>Teste</p>",
-    alternativas: [
-      "Document.getElement('P').InnerHTML = 'Olá mundo!'",
-      "Document.getElementById('demo').InnerHTML = 'Olá mundo!'",
-      "Document.getElementByName('P').InnerHTML = 'Olá mundo!'",
-      "#demo.InnerHTML = 'Olá mundo!'",
-    ],
-    correta: 1,
+      "Python é uma linguagem extremamente robusta e utilizada nas mais diversas soluções, como:",
+    alternativas: ["Processamento pesado de efeitos do cinema","Back-end de sistemas web	, crms e erps","Aprendizado de maquina,soluções de análise de dados", "Todas as anteriores"],
+    correta: 3,
   },
   {
-    titulo: "",
-    alternativas: [
-      "echo 'Be a Dev' ",
-      "<title> Be a Dev </title>",
-      "<body>Be a Dev</body>",
-      "NDA",
-    ],
-    correta: 1,
+    titulo: "Como declaramos uma variável em phython?",
+    alternativas: ["echo", "var", "def", "$"],
+    correta: 2,
   },
   {
-    titulo: "Para que serve a estrutura condicional if?",
-    alternativas: ["", "", "", ""],
+    titulo: "Qual é o melhor atalho para incrementar a variável 'a=0' em Python?",
+    alternativas: ["a+= 1", "a= a+1", "a++", "a= a+1 if a else 1"],
     correta: 0,
   },
 ];
@@ -102,6 +92,7 @@ let app = {
   },
   // funcao para finalizar o game, necessário buscar uma lógica para mostrar o encerramento do game na tela
   finalizaGame: function(){
+    localStorage.setItem("pontos", this.placar)
     window.location.href = "endgame.html";
   }
 };

@@ -1,3 +1,5 @@
+// import { json } from "sequelize";
+
 let perguntas = [
   {
     titulo:
@@ -28,13 +30,15 @@ let perguntas = [
   },
   {
     titulo: "Para que serve a estrutura condicional if?",
-    alternativas: ["A", "B", "C", "D"],
-    correta: 0,
+    alternativas: ["Para realizar buscas no banco e updates", "Repetições dentro de uma estrutura", "Para delimitar condições que devem ser cumpridas para determinada ação se executar", "NDA"],
+    correta: 2,
   },
 ];
 
 // objeto app com seus métodos
 //funcao de começo do jogo
+
+
 let app = {
   start: function () {
     this.placar = 0;
@@ -98,16 +102,20 @@ let app = {
     if (this.placar > 0) {
       let NumPlacar = document.getElementById("NumPlacar");
       NumPlacar.innerText = this.placar;
+    
     }
   },
 
-    // funcao para finalizar o game, necessário buscar uma lógica para mostrar o encerramento do game na tela
+  // funcao para finalizar o game, necessário buscar uma lógica para mostrar o encerramento do game na tela
   finalizaGame: function(){
-    window.location.href = "endgame.html";
-  }
+     localStorage.setItem("pontos", this.placar)
+      window.location.href = "endgame.html";
+  },
+
 };
 
 app.start();
+
 
 // bind = fazer a fixação do this ao objeto que referenciarmos. Pode ser substituido pela arrow function
 // this = faz referencia a aquilo que desejamos

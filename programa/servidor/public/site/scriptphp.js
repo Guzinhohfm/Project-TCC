@@ -98,6 +98,7 @@ let app = {
 
   // funcao para finalizar o game, necessário buscar uma lógica para mostrar o encerramento do game na tela
   finalizaGame: function(){
+    localStorage.setItem("pontos", this.placar)
     window.location.href = "endgame.html";
   }
 };

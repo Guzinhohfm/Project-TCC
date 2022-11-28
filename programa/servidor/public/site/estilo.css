@@ -73,3 +73,13 @@ li {
 .alternativas-fim, a{
     text-decoration: none;
 }
+
+#NumPlacar, .placar{
+  color: white;
+}
+
+.pontuacao{
+  position: relative;
+  right: -3em;
+  font-size: 50px;
+}
